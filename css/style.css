@@ -282,7 +282,7 @@ textarea.field {
   font-weight: bold;
 }
 
-.news-teg-item:nth-child(n+2) {
+.new-teg-item:nth-child(n+2) {
   margin-left: 18px;
 }
 
@@ -312,7 +312,7 @@ textarea.field {
   text-transform: uppercase;
 }
 
-.title-link:hover, .trend-title-link:hover {
+.title-link:hover, .trend-title-link:hover, .teg-link:hover {
   color: #b59f5b;
 }
 
@@ -463,7 +463,7 @@ textarea.field {
 .teg-list-item {
   margin-right: 5px;
   margin-bottom: 6px;
-  border: 3px solid #eeee;
+  border: 3px solid #eeeeee;
   padding: 4px 12px;
   font-size: 12px;
   font-weight: bold;
@@ -494,6 +494,7 @@ textarea.field {
 }
 
 .topic-marker {
+  margin-left: 4px;
   position: relative;
   bottom: 3px;
 
