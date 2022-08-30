@@ -9,38 +9,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="popup">
-		<div class="modal-window">
-			<header class="modal-window-header">Ваш фидбек</header>
-			<div class="decorative-underline"></div>
-			<form class="modal-form">
-				<p>Как часто вы заходите на сайт?</p>
-				<div class="modal-select-form">
-					<select class="modal-select">
-						<option value="Каждый день">Каждый день</option>
-	    				<option selected  value="Почти каждый день">Почти каждый день</option>
-	    				<option value="Раз в несколько дней">Раз в несколько дней</option>
-	    				<option value="Раз в несколько недель">Раз в несколько недель</option>
-	    				<option value="Раз в год">Раз в год</option>
+	<section class="popup hidden">
+		<div class="popup-container">
+			<button class="close-button" type="button">
+				<span class="visually-hidden">Закрыть окно</span>
+			</button>
+			<form class="feedback-form">
+				<h3 class="main-section-title underline">Ваш фидбек</h3>
+				<label class="feedback-form-group">
+					<span class="form-hint">Как часто вы заходите на сайт?</span>
+					<select class="field">
+						<option>Почти каждый день</option>
+						<option>Раз в несколько дней</option>
+						<option>Раз в несколько недель</option>
+						<option>Несколько раз в год</option>
 					</select>
-				</div>
-
-				<div class="modal-radio-form">
-
-					<input type="radio" name="modal-form" value="да" class="modal-radio">
-					<label class="modal-radio-label">да</label>
-
-					<input type="radio" name="modal-form" value="да" class="modal-radio radio-check-no">
-					<label class="modal-radio-label">нет</label>
-
-				</div>
-
-				<label for="wishes" class="modal-form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-				<textarea id="wishes" name="modal-form" rows="7" cols="38" placeholder="Может, больше рецептов?" class="modal-form-textarea"></textarea>
-				<input type="submit" value="Отправить" class="modal-form-input">
+				</label>
+				<span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+				<label>
+					<input class="radio-button" type="radio" name="radio-group">
+					<span class="radio-text">Да</span>
+				</label>
+				<label>
+					<input class="radio-button" type="radio" name="radio-group">
+					<span class="radio-text">Нет</span>
+				</label>
+				<label class="feedback-form-group">
+					<span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+					<textarea class="field"  placeholder="Может, больше рецептов?" required></textarea>
+				</label>
+				<button class="button feedback-button" type="submit">
+					<span class="">Отправить</span>
+				</button>
 			</form>
-
-			<button class="modal-close"></button>
 		</div>
 	</section>
     <header class="header">
@@ -84,7 +85,7 @@
                         </li>
                     </ul>
                     <h2 class="trend-title">
-                        <a class="trend-title-link" href="#0">Сейчас в тренде: Сад на подоконнике</a>
+                        <a class="trend-title-link" href="#0">Сад на подоконнике</a>
                     </h2>
                 </div>
             </div>
@@ -92,14 +93,11 @@
                 <div class="trend-card">
                     <ul class="news-teg-list">
                         <li class="new-teg-item">
-                            <a class="news-teg-link" href="#0">lifestyle</a>
-                        </li>
-                        <li class="new-teg-item">
-                            <a class="news-teg-link" href="#0">interior</a>
+                            <a class="news-teg-link" href="#0">food</a>
                         </li>
                     </ul>
                     <h2 class="trend-title">
-                        <a class="trend-title-link" href="#0">Сейчас в тренде: Сыры на красивых картинках из интернета: какие они на вкус?</a>
+                        <a class="trend-title-link" href="#0">Сыры на красивых картинках из интернета: какие они на вкус?</a>
                     </h2>
                 </div>
             </div>
@@ -110,11 +108,11 @@
                             <a class="news-teg-link" href="#0">lifestyle</a>
                         </li>
                         <li class="new-teg-item">
-                            <a class="news-teg-link" href="#0">interior</a>
+                            <a class="news-teg-link" href="#0">travek</a>
                         </li>
                     </ul>
                     <h2 class="trend-title">
-                        <a class="trend-title-link" href="#0">Сейчас в тренде: Собираемся в первый поход в горы</a>
+                        <a class="trend-title-link" href="#0">Собираемся в первый поход в горы</a>
                     </h2>
                 </div>
             </div>
@@ -122,14 +120,14 @@
                 <div class="trend-card">
                     <ul class="news-teg-list">
                         <li class="new-teg-item">
-                            <a class="news-teg-link" href="#0">lifestyle</a>
+                            <a class="news-teg-link" href="#0">food</a>
                         </li>
                         <li class="new-teg-item">
-                            <a class="news-teg-link" href="#0">interior</a>
+                            <a class="news-teg-link" href="#0">health</a>
                         </li>
                     </ul>
                     <h2 class="trend-title">
-                        <a class="trend-title-link" href="#0">Сейчас в тренде: Сколько витамина С в лимонах?</a>
+                        <a class="trend-title-link" href="#0">Сколько витамина С в лимонах?</a>
                     </h2>
                 </div>
             </div>
@@ -350,7 +348,7 @@
     </div>
     <section class="craft-section-wrapper">
         <div>
-            <h2 class="main-section-title underline"></h2>
+            <h2 class="main-section-title underline">Наши изделия</h2>
         </div>
         <div class="craft">
             <div class="craft-card-wrapper">
