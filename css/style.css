@@ -552,7 +552,7 @@ textarea.field {
   text-decoration: none;
 }
 
-.craft-link:hover, .news-teg-link:hover, .author:hover {
+.craft-link:hover, .news-teg-link:hover, .author:hover, .visually-hidden:hover {
   text-decoration: underline;
 }
 
